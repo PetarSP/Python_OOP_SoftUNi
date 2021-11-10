@@ -14,3 +14,4 @@ print(band.add_album(album))
 print(band.remove_album("Initial D"))
 print(band.details())
 
+
