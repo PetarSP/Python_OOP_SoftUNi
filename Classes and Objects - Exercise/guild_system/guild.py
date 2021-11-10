@@ -18,8 +18,8 @@ class Guild:
     def kick_player(self, player_name: str):
         for player in self.players:
             if player_name == player.name:
-                self.players.remove(player_name)
-                Player.guild = "Unaffiliated"
+                self.players.remove(player)
+                player.guild = "Unaffiliated"
                 return f"Player {player_name} has been removed from the guild."
         return f"Player {player_name} is not in the guild."
 
